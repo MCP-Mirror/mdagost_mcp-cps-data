@@ -7,17 +7,9 @@ A MCP server project for exposing a local SQLite database and a local LanceDB ve
 ### Tools
 
 The server implements two tools:
-- query_schools_and_neighborhoods: Excecute a SELECT query on a table of Chicago public schools and their neighborhoods called "schooltoneighborhood" with the following schema:
-```
-id INTEGER NOT NULL,
-created_at DATETIME NOT NULL, 
-school_id INTEGER NOT NULL, 
-school_name VARCHAR NOT NULL, 
-neighborhood VARCHAR NOT NULL, 
-PRIMARY KEY (id)
-```
+- `query_schools_and_neighborhoods`: Excecute a SELECT query on a table of Chicago public schools and their neighborhoods called "schooltoneighborhood" with the following schema: (id INTEGER NOT NULL, created_at DATETIME NOT NULL, school_id INTEGER NOT NULL, school_name VARCHAR NOT NULL, neighborhood VARCHAR NOT NULL, PRIMARY KEY (id)).
   - Takes "query"
-- query_school_websites: Query a database of Chicago public school websites for context relevant to answering a given question.
+- `query_school_websites`: Query a database of Chicago public school websites for context relevant to answering a given question.
 
 ## Configuration
 Get the SQlite database and the LanceDB vector database from the [cps-childcare] project(https://github.com/mdagost/cps-childcare).
@@ -33,7 +25,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
 <details>
   <summary>Development/Unpublished Servers Configuration</summary>
-  ```
+```
   "mcpServers": {
     "mcp-cps-data": {
       "command": "uv",
@@ -49,7 +41,7 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
       ]
     }
   }
-  ```
+```
 </details>
 
 ### Debugging
