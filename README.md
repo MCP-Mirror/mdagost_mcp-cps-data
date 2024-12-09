@@ -8,8 +8,9 @@ A MCP server project for exposing a local SQLite database and a local LanceDB ve
 
 The server implements two tools:
 - `query_schools_and_neighborhoods`: Excecute a SELECT query on a table of Chicago public schools and their neighborhoods called "schooltoneighborhood" with the following schema: (id INTEGER NOT NULL, created_at DATETIME NOT NULL, school_id INTEGER NOT NULL, school_name VARCHAR NOT NULL, neighborhood VARCHAR NOT NULL, PRIMARY KEY (id)).
-  - Takes "query"
+  - Takes required parameter `query`
 - `query_school_websites`: Query a database of Chicago public school websites for context relevant to answering a given question.
+  - Takes required parameter `question` and optional parameter `school_name`.
 
 ## Configuration
 Get the SQlite database and the LanceDB vector database from the [cps-childcare] project(https://github.com/mdagost/cps-childcare).
