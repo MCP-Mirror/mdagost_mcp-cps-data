@@ -1,0 +1,21 @@
+[project]
+name = "mcp-cps-data"
+version = "0.1.0"
+description = "A MCP server project"
+readme = "README.md"
+authors = []
+requires-python = ">=3.10"
+dependencies = [
+ "einops>=0.8.0",
+ "lancedb>=0.16.0",
+ "mcp>=1.1.0",
+ "rerankers>=0.6.0",
+ "sentence-transformers>=3.3.1",
+]
+
+[build-system]
+requires = [ "hatchling",]
+build-backend = "hatchling.build"
+
+[project.scripts]
+mcp-cps-data = "mcp_cps_data:main"
