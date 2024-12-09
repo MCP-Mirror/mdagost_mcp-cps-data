@@ -21,10 +21,10 @@ Get the SQlite database and the LanceDB vector database from the [cps-childcare]
 #### Claude Desktop
 
 On MacOS: `~/Library/Application\ Support/Claude/claude_desktop_config.json`
+
 On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
 
-<details>
-  <summary>Development/Unpublished Servers Configuration</summary>
+Development/Unpublished Servers Configuration:
 ```
   "mcpServers": {
     "mcp-cps-data": {
@@ -42,7 +42,6 @@ On Windows: `%APPDATA%/Claude/claude_desktop_config.json`
     }
   }
 ```
-</details>
 
 ### Debugging
 
